@@ -6,18 +6,18 @@ import java.util.zip.ZipOutputStream;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> files = Arrays.asList("Games/savegames/first",
-                "Games/savegames/second", "Games/savegames/third");
+        List<String> files = Arrays.asList("C:/Users/whats/Desktop/Games/savegames/first",
+                "C:/Users/whats/Desktop/Games/savegames/second", "C:/Users/whats/Desktop/Games/savegames/third");
 
         GameProgress first = new GameProgress(100, 1, 1, 0);
         GameProgress second = new GameProgress(80, 3, 2, 10.0);
         GameProgress third = new GameProgress(50, 3, 3, 20.5);
 
-        saveGame("Games/savegames/first", first);
-        saveGame("Games/savegames/second", second);
-        saveGame("Games/savegames/third", third);
+        saveGame("C:/Users/whats/Desktop/Games/savegames/first", first);
+        saveGame("C:/Users/whats/Desktop/Games/savegames/second", second);
+        saveGame("C:/Users/whats/Desktop/Games/savegames/third", third);
 
-        zipFiles("Games/savegames/zip.zip", files);
+        zipFiles("C:/Users/whats/Desktop/Games/savegames/zip.zip", files);
 
         for (String i: files){
             File f = new File(i);
